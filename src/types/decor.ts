@@ -110,13 +110,21 @@ export interface ExpertiseItem {
 
 export interface ProductDetailItem {
   id: string;
+  slug: string;
   name: string;
   category: "mosquito-nets" | "blinds" | "curtains";
   categoryLabel: string;
   description: string;
+  shortDescription?: string;
   image: string;
   badge?: string;
   highlights?: string[];
+  galleryImages?: string[];
+  material?: string;
+  variants?: string[];
+  applications?: string[];
+  specifications?: { label: string; value: string }[];
+  isClientProduct?: boolean;
 }
 
 export interface CurtainAccessoryItem {

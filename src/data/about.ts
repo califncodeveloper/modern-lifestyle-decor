@@ -49,15 +49,14 @@ export const businessExpertiseContent = {
       categorySlug: "mosquito-nets",
       description:
         "Manufacturing a range of mosquito net solutions for windows, doors and partition applications.",
-      image: "/images/categories/category-mosquito-nets.jpg",
+      image: "/images/categories/category-mosquito-nets.png",
       products: [
-        "SS Open Window",
-        "SS Open Main Door",
-        "Pleated Mosquito Net — Fiber / SS Mesh",
-        "Pleated Heavy Partition",
-        "SS Sliding Mosquito Mesh",
-        "Honeycomb Partition",
-        "PVC Pleated Partition",
+        "SS Open Main Door — Classic & Teak Editions",
+        "SS Open Double Door / French Door Systems",
+        "SS Open Casement Windows (3-Panel & 2-Panel)",
+        "SS Open Balcony & Terrace Doors",
+        "Custom Ventilator & Exhaust Fan Cutout Screens",
+        "Velcro / Magnetic Detachable Screens",
       ],
       badge: "In-House Mesh Engineering",
       href: "/services/mosquito-nets",
@@ -69,7 +68,7 @@ export const businessExpertiseContent = {
       categorySlug: "blinds",
       description:
         "Offering a variety of blinds designed to complement different interior styles and window requirements.",
-      image: "/images/categories/category-blinds.jpg",
+      image: "/images/categories/category-blinds.png",
       products: [
         "Roller Blinds",
         "Zebra Blinds",
@@ -88,7 +87,7 @@ export const businessExpertiseContent = {
       categorySlug: "customised-curtains",
       description:
         "Customised curtain collections featuring fabrics from branded catalogues and a variety of material options.",
-      image: "/images/categories/category-curtains.jpg",
+      image: "/images/categories/category-curtains.png",
       materials: [
         "Blackout Fabric",
         "Jacquard Fabric",

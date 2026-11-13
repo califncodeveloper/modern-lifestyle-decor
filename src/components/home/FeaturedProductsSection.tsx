@@ -11,12 +11,11 @@ import { featuredProducts } from "@/data/homepage";
 import { fadeUp, staggerContainer } from "@/lib/motion";
 import { cn } from "@/utils/cn";
 
-type CategoryFilter = "all" | "mosquito-nets" | "blinds" | "curtains";
+type CategoryFilter = "all" | "mosquito-nets" | "curtains";
 
 const filterTabs = [
   { id: "all" as CategoryFilter, label: "All Collections" },
   { id: "mosquito-nets" as CategoryFilter, label: "Mosquito Nets" },
-  { id: "blinds" as CategoryFilter, label: "Designer Blinds" },
   { id: "curtains" as CategoryFilter, label: "Customised Curtains" },
 ];
 

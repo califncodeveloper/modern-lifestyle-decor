@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     siteName: siteConfig.name,
     images: [
       {
-        url: "/images/categories/category-mosquito-nets.jpg",
+        url: "/images/categories/category-mosquito-nets.png",
         width: 1200,
         height: 630,
         alt: `${siteConfig.name} Mosquito Nets`,
@@ -47,8 +47,8 @@ export default function MosquitoNetsPage() {
     { label: "Mosquito Nets", href: "/services/mosquito-nets" },
   ];
 
-  // Feature the flagship Pleated Partition as an editorial hero highlight, and display all 7 in the catalogue
-  const featuredSystem = mosquitoNetProducts[2]; // Pleated Mosquito Net — Fiber / SS Mesh
+  // Feature the flagship SS Open Main Door as an editorial hero highlight, and display all verified models in the catalogue
+  const featuredSystem = mosquitoNetProducts[0]; // SS Open Main Door — Classic Hinged
 
   return (
     <>
@@ -59,7 +59,7 @@ export default function MosquitoNetsPage() {
         description="Explore our range of mosquito net solutions for windows, doors and partitions."
         breadcrumbs={breadcrumbs}
         categoryTag="Windows • Doors • Partitions"
-        image="/images/categories/category-mosquito-nets.jpg"
+        image="/images/categories/category-mosquito-nets.png"
       />
 
       {/* 2. Editorial Highlight Section */}
@@ -82,7 +82,7 @@ export default function MosquitoNetsPage() {
         </Container>
       </section>
 
-      {/* 3. Complete 7-Product Catalogue Grid */}
+      {/* 3. Complete Product Catalogue Grid */}
       <section className="py-16 sm:py-20 lg:py-24 bg-[#F8F9FC]">
         <Container>
           <div className="mb-12 max-w-2xl">
@@ -94,7 +94,7 @@ export default function MosquitoNetsPage() {
               Complete Mosquito Net Solutions
             </h2>
             <p className="mt-3 text-sm sm:text-base font-light leading-relaxed text-[#525252]">
-              Explore our seven custom-tailored insect barrier systems for residential and commercial openings.
+              Explore our verified custom-tailored insect barrier systems for residential and commercial openings.
             </p>
           </div>
 

@@ -45,16 +45,22 @@ Modern LifeStyle Decor is a manufacturer, wholesaler, and retailer specializing 
 4. Premium Curtain Accessories and Hardware
 
 PRODUCTS & SERVICES CATALOGUE:
-1. Mosquito Nets:
-   - SS Open Window (hinged stainless steel wire mesh window screen)
-   - SS Open Main Door (heavy-duty hinged entrance door screen with reinforced frame)
-   - Pleated Mosquito Net — Fiber / SS Mesh (accordion-folding retractable system for windows and doors)
-   - Pleated Heavy Partition (reinforced barrier screen for large openings, French doors, balconies)
-   - SS Sliding Mosquito Mesh (smooth-gliding frame for UPVC & aluminium sliding windows)
-   - Honeycomb Partition (cellular pleated folding partition offering acoustic dampening and insect protection)
-   - PVC Pleated Partition (durable folding PVC accordion partition for indoor spatial division)
+1. Mosquito Nets (Verified Client Fabrication & Supply):
+   - SS Open Main Door — Classic Hinged (heavy-duty entrance door screen with stainless steel wire mesh, push mid-rail, and safety latches)
+   - SS Open Double Door / French Door Mosquito Net (twin-shutter hinged system with central tower bolt locking for wide entrances)
+   - SS Open Main Door — Teak Entrance Edition (residential screen with twin horizontal reinforcement bars and copper-brown finish)
+   - SS Open Balcony & Terrace Door — Ivory Edition (hinged door in ivory powder coat with pull handle and bottom kick-rail)
+   - SS Open Door with Fixed Sidelight Partition (custom asymmetric system with hinged door and fixed vertical mesh screen)
+   - SS Open Main Door — Grand Residence Edition (copper-gold powder coated entrance screen)
+   - SS Open Window — 3-Panel Hinged System (copper-bronze casement window screen with curved handles and latches)
+   - SS Open Window — 2-Panel Double Casement (residential casement window insect screen with center latch)
+   - SS Open Window — 2-Panel Interior Casement (fitted smoothly over window grills in living areas)
+   - Custom Ventilator & Exhaust Fan Mosquito Net (dual-compartment frame with exhaust fan cutout and louver screen)
+   - SS Open Window — 3-Panel Casement in Dual Bronze & Ivory Finishes
+   - Velcro / Magnetic Detachable Window Screen (perimeter fastener-bordered detachable insect screen)
+   - Velcro / Magnetic Ventilator Mosquito Screen (corner pull tab and reinforced border for tiled walls)
 
-2. Designer Blinds:
+2. Designer Blinds (Window Blinds Collection):
    - Roller Blinds (clean, minimalist fabric roll system for daylight filtering and privacy)
    - Zebra Blinds (dual-layer alternating sheer and solid stripes for adjustable light balance)
    - PVC Blinds (moisture-resistant slatted blinds ideal for kitchens, bathrooms, high-humidity areas)
@@ -62,7 +68,8 @@ PRODUCTS & SERVICES CATALOGUE:
    - Wooden Blinds (natural timber horizontal slats bringing warm, organic textures)
    - Roman Blinds (soft fabric drapery folds when raised, combining textile elegance with blind function)
 
-3. Customised Curtains (Fabrics):
+3. Customised Curtains & Window Ensembles:
+   - Customised Curtains & Window Ensemble (integrated installation combining tailored jacquard drapery with SS Open Window mosquito net)
    - Blackout Fabric (dense multi-weave fabric blocking 100% external light and reducing thermal heat)
    - Jacquard Fabric (textured woven drapery with intricate structural motifs and luxurious drape)
    - Designer Fabric (curated modern catalogues with contemporary artistic patterns and palettes)

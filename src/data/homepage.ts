@@ -47,142 +47,155 @@ export const categoryIntroContent = {
 };
 
 export const featuredProducts: FeaturedProduct[] = [
-  // Mosquito Nets
+  // Real Client Mosquito Nets
   {
-    id: "ss-open-window",
-    name: "SS Open Window",
+    id: "ss-open-main-door-classic",
+    name: "SS Open Main Door — Classic Hinged",
     category: "mosquito-nets",
     categoryLabel: "Mosquito Nets",
     description:
-      "Durable stainless steel wire mesh in precision-hinged aluminum frames for seamless ventilation.",
-    image: "/images/products/product-ss-open-window.jpg",
-    href: "/services/mosquito-nets",
-    badge: "Stainless Steel Mesh",
+      "Robust hinged entrance door mosquito net featuring stainless steel wire mesh, heavy-duty powder-coated framing, and mid-rail push bar.",
+    image: "/images/products/mosquito-nets/ss-open-main-door-classic-main.png",
+    href: "/products/ss-open-main-door-classic",
+    badge: "Hinged Entrance Door",
   },
   {
-    id: "pleated-mosquito-net",
-    name: "Pleated Mosquito Net",
+    id: "ss-open-double-door",
+    name: "SS Open Double Door / French Door",
     category: "mosquito-nets",
     categoryLabel: "Mosquito Nets",
     description:
-      "Accordion-folding mesh sliding quietly along low-profile tracks for compact window spaces.",
-    image: "/images/products/product-pleated-net.jpg",
-    href: "/services/mosquito-nets",
-    badge: "Accordion Retraction",
+      "Twin-shutter hinged mosquito net system engineered for wide entrances, French doorways, and commercial halls with tower bolt locking.",
+    image: "/images/products/mosquito-nets/ss-open-double-door-main.png",
+    href: "/products/ss-open-double-door",
+    badge: "Twin Shutter System",
   },
   {
-    id: "ss-sliding-mesh",
-    name: "SS Sliding Mosquito Mesh",
+    id: "ss-open-window-3panel",
+    name: "SS Open Window — 3-Panel Hinged System",
     category: "mosquito-nets",
     categoryLabel: "Mosquito Nets",
     description:
-      "Heavy-duty sliding panels engineered for large glass sliders, balconies and french windows.",
-    image: "/images/products/product-ss-sliding-mesh.jpg",
-    href: "/services/mosquito-nets",
-    badge: "Smooth Glide Rollers",
+      "Three-shutter hinged casement window insect screen in copper-bronze finish with curved handles, latches, and stainless steel mesh.",
+    image: "/images/products/mosquito-nets/ss-open-window-3panel-main.png",
+    href: "/products/ss-open-window-3panel",
+    badge: "3-Panel Casement",
   },
   {
-    id: "honeycomb-partition",
-    name: "Honeycomb Partition",
+    id: "ventilator-exhaust-mosquito-net",
+    name: "Ventilator & Exhaust Fan Mosquito Net",
     category: "mosquito-nets",
     categoryLabel: "Mosquito Nets",
     description:
-      "Cellular barrier screens delivering dual insulation, acoustic comfort and insect defense.",
-    image: "/images/products/product-honeycomb-partition.jpg",
-    href: "/services/mosquito-nets",
-    badge: "Thermal Insulation",
+      "Bespoke dual-compartment mosquito net frame engineered for bathroom and kitchen ventilators with exhaust fan cutout and louver screen.",
+    image:
+      "/images/products/mosquito-nets/ventilator-exhaust-mosquito-net-main.png",
+    href: "/products/ventilator-exhaust-mosquito-net",
+    badge: "Exhaust Cutout Solution",
+  },
+  {
+    id: "ss-open-door-ivory",
+    name: "SS Open Balcony & Terrace Door (Ivory)",
+    category: "mosquito-nets",
+    categoryLabel: "Mosquito Nets",
+    description:
+      "Hinged mosquito net door in an elegant ivory powder coat finish with pull handle and bottom kick-rail reinforcement for balcony exits.",
+    image: "/images/products/mosquito-nets/ss-open-door-ivory-main.png",
+    href: "/products/ss-open-door-ivory",
+    badge: "Ivory Powder Coat",
+  },
+  {
+    id: "velcro-magnetic-window-net",
+    name: "Velcro / Magnetic Detachable Window Screen",
+    category: "mosquito-nets",
+    categoryLabel: "Mosquito Nets",
+    description:
+      "Detachable fastener-bordered window insect screen mounted flush onto UPVC frames, offering tool-free peel-off cleaning.",
+    image: "/images/products/mosquito-nets/velcro-magnetic-window-net-main.png",
+    href: "/products/velcro-magnetic-window-net",
+    badge: "Detachable Screen",
   },
 
-  // Blinds
+  // Real Client Ensemble & Customised Curtains
   {
-    id: "roller-blinds",
-    name: "Roller Blinds",
-    category: "blinds",
-    categoryLabel: "Designer Blinds",
-    description:
-      "Sleek architectural fabric rolls with precise manual or motorized daylight filtering controls.",
-    image: "/images/products/product-roller-blinds.jpg",
-    href: "/services/blinds",
-    badge: "Modern Minimalist",
-  },
-  {
-    id: "zebra-blinds",
-    name: "Zebra Blinds",
-    category: "blinds",
-    categoryLabel: "Designer Blinds",
-    description:
-      "Dual sheer and solid striped layers alternating to allow bespoke light and privacy balance.",
-    image: "/images/products/product-zebra-blinds.jpg",
-    href: "/services/blinds",
-    badge: "Dual Band Control",
-  },
-  {
-    id: "wooden-blinds",
-    name: "Wooden Blinds",
-    category: "blinds",
-    categoryLabel: "Designer Blinds",
-    description:
-      "Warm natural timber slats coated with protective finishes for timeless architectural character.",
-    image: "/images/products/product-wooden-blinds.jpg",
-    href: "/services/blinds",
-    badge: "Natural Hardwood",
-  },
-  {
-    id: "roman-blinds",
-    name: "Roman Blinds",
-    category: "blinds",
-    categoryLabel: "Designer Blinds",
-    description:
-      "Soft horizontal textile folds stacking evenly to bring classical elegance to contemporary spaces.",
-    image: "/images/products/product-roman-blinds.jpg",
-    href: "/services/blinds",
-    badge: "Tailored Folds",
-  },
-
-  // Curtains
-  {
-    id: "blackout-curtains",
-    name: "Blackout Curtains",
+    id: "customised-curtains-window-ensemble",
+    name: "Customised Curtains & Window Ensemble",
     category: "curtains",
     categoryLabel: "Customised Curtains",
     description:
-      "High-density triple-weave fabrics providing 100% light blockage, privacy and thermal balance.",
-    image: "/images/products/product-blackout-curtains.jpg",
-    href: "/services/customised-curtains",
-    badge: "Complete Darkening",
+      "Complete window furnishing installation combining an SS Open Window hinged mosquito net with tailor-made drapery and tieback belt.",
+    image:
+      "/images/products/curtains/customised-curtains-window-ensemble-main.png",
+    href: "/products/customised-curtains-window-ensemble",
+    badge: "Real Installation Ensemble",
   },
   {
-    id: "jacquard-curtains",
-    name: "Jacquard Curtains",
-    category: "curtains",
-    categoryLabel: "Customised Curtains",
+    id: "ss-open-main-door-teak",
+    name: "SS Open Main Door — Teak Entrance",
+    category: "mosquito-nets",
+    categoryLabel: "Mosquito Nets",
     description:
-      "Intricately woven brocade textures delivering tactile richness and opulent interior depth.",
-    image: "/images/products/product-jacquard-curtains.jpg",
-    href: "/services/customised-curtains",
-    badge: "Intricate Weave",
+      "Heavy-duty residential entrance mosquito screen with twin horizontal reinforcement bars and copper-brown finish paired with teak main door.",
+    image: "/images/products/mosquito-nets/ss-open-main-door-teak-main.png",
+    href: "/products/ss-open-main-door-teak",
+    badge: "Residential Entrance",
   },
   {
-    id: "sheer-curtains",
-    name: "Sheer Curtains",
-    category: "curtains",
-    categoryLabel: "Customised Curtains",
+    id: "ss-open-door-sidelight",
+    name: "SS Open Door with Sidelight Partition",
+    category: "mosquito-nets",
+    categoryLabel: "Mosquito Nets",
     description:
-      "Gently diffused daylight filtering through lightweight airy voile and ethereal linen weaves.",
-    image: "/images/products/product-sheer-curtains.jpg",
-    href: "/services/customised-curtains",
-    badge: "Soft Diffused Light",
+      "Asymmetric entrance screen combining an active hinged door with a fixed vertical insect mesh sidelight partition.",
+    image: "/images/products/mosquito-nets/ss-open-door-sidelight-main.png",
+    href: "/products/ss-open-door-sidelight",
+    badge: "Asymmetric Partition",
   },
   {
-    id: "designer-curtains",
-    name: "Designer Curtains",
-    category: "curtains",
-    categoryLabel: "Customised Curtains",
+    id: "ss-open-main-door-grand",
+    name: "SS Open Main Door — Grand Residence",
+    category: "mosquito-nets",
+    categoryLabel: "Mosquito Nets",
     description:
-      "Custom-tailored drapery coordinated with bespoke hardware, eyelets and architectural tracks.",
-    image: "/images/products/product-designer-curtains.jpg",
-    href: "/services/customised-curtains",
-    badge: "Custom Tailored",
+      "High-spec hinged entrance mosquito screen in copper-gold finish engineered to mount cleanly alongside security grills and wood doors.",
+    image: "/images/products/mosquito-nets/ss-open-main-door-grand-main.png",
+    href: "/products/ss-open-main-door-grand",
+    badge: "Grand Entrance",
+  },
+  {
+    id: "ss-open-window-2panel-casement",
+    name: "SS Open Window — 2-Panel Double Casement",
+    category: "mosquito-nets",
+    categoryLabel: "Mosquito Nets",
+    description:
+      "Twin-panel hinged casement window insect screen in brown powder-coated frame with mid-rail, handles, and daylight clarity.",
+    image:
+      "/images/products/mosquito-nets/ss-open-window-2panel-casement-main.png",
+    href: "/products/ss-open-window-2panel-casement",
+    badge: "Double Casement",
+  },
+  {
+    id: "ss-open-window-dual-finish",
+    name: "SS Open Window — 3-Panel (Bronze & Ivory)",
+    category: "mosquito-nets",
+    categoryLabel: "Mosquito Nets",
+    description:
+      "Three-panel hinged window mosquito screen with openable casement shutters available in dual Bronze and Ivory finish options.",
+    image: "/images/products/mosquito-nets/ss-open-window-3panel-bronze.png",
+    href: "/products/ss-open-window-dual-finish",
+    badge: "Bronze & Ivory Finishes",
+  },
+  {
+    id: "velcro-magnetic-ventilator-net",
+    name: "Velcro / Magnetic Ventilator Mosquito Screen",
+    category: "mosquito-nets",
+    categoryLabel: "Mosquito Nets",
+    description:
+      "Custom horizontal ventilator insect screen with reinforced stitched border and corner pull-tab mounted over ventilator grills.",
+    image:
+      "/images/products/mosquito-nets/velcro-magnetic-ventilator-net-main.png",
+    href: "/products/velcro-magnetic-ventilator-net",
+    badge: "Ventilator Screen",
   },
 ];
 
