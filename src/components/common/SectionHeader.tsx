@@ -47,7 +47,7 @@ export function SectionHeader({
       )}
       <h2
         className={cn(
-          "text-3xl sm:text-4xl lg:text-[2.75rem] font-medium tracking-tight font-heading leading-tight",
+          "text-2xl sm:text-4xl lg:text-[2.75rem] font-medium tracking-tight font-heading leading-tight break-words",
           inverted ? "text-white" : "text-[#151717]"
         )}
       >

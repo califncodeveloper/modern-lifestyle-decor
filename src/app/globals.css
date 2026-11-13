@@ -108,7 +108,9 @@
 html {
   color-scheme: light;
   scroll-behavior: auto;
+  overflow-x: hidden;
   overflow-x: clip;
+  max-width: 100%;
 }
 
 body {
@@ -119,7 +121,9 @@ body {
   min-height: 100dvh;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
   overflow-x: clip;
+  max-width: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

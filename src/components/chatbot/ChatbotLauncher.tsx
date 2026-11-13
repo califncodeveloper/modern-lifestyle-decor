@@ -66,9 +66,9 @@ export function ChatbotLauncher({
                 }
               }}
               aria-label="Open AI chat assistant: 👋 Hi! How can we help you!"
-              className="absolute bottom-full right-0 mb-2.5 whitespace-nowrap bg-white text-[#151717] px-4 py-2.5 rounded-2xl shadow-xl border border-[#E5E9F2] flex items-center gap-2 cursor-pointer hover:border-[#004AAD]/40 active:scale-95 transition-all duration-150 z-50 select-none group"
+              className="absolute bottom-full right-0 mb-2.5 max-w-[calc(100vw-2rem)] whitespace-nowrap bg-white text-[#151717] px-3.5 py-2 sm:px-4 sm:py-2.5 rounded-2xl shadow-xl border border-[#E5E9F2] flex items-center gap-2 cursor-pointer hover:border-[#004AAD]/40 active:scale-95 transition-all duration-150 z-50 select-none group"
             >
-              <span className="text-xs sm:text-sm font-semibold text-[#151717] group-hover:text-[#004AAD] transition-colors">
+              <span className="text-xs sm:text-sm font-semibold text-[#151717] group-hover:text-[#004AAD] transition-colors truncate">
                 👋 Hi! How can we help you!
               </span>
               {/* Speech bubble pointer pointing down to chatbot button */}

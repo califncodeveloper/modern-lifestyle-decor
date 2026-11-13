@@ -58,7 +58,7 @@ export function GalleryCTA() {
           {/* Heading */}
           <motion.h2
             variants={fadeUp}
-            className="font-heading text-3xl font-medium tracking-tight text-[#151717] sm:text-4xl lg:text-5xl leading-tight"
+            className="font-heading text-2xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-[#151717] leading-tight break-words"
           >
             Looking for the Perfect Solution for Your Space?
           </motion.h2>

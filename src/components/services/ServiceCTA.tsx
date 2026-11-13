@@ -59,7 +59,7 @@ export function ServiceCTA({
           </div>
 
           {/* Heading */}
-          <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-white leading-tight">
+          <h2 className="font-heading text-2xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-white leading-tight break-words">
             {title}
           </h2>
 

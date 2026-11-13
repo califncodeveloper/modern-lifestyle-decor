@@ -82,6 +82,37 @@ export function BusinessExpertiseSection() {
                     {cat.title}
                   </h3>
 
+                  {/* Mobile Image Insertion (Order 2 on mobile, hidden on lg) */}
+                  <div className="my-5 lg:hidden relative aspect-[16/10] sm:aspect-[16/11] w-full overflow-hidden rounded-xs border border-neutral-200/90 bg-neutral-100 shadow-md">
+                    <Image
+                      src={cat.image}
+                      alt={`Modern LifeStyle Decor ${cat.title} collection`}
+                      fill
+                      sizes="(max-width: 1024px) 100vw, 50vw"
+                      className="object-cover object-center"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-transparent to-transparent pointer-events-none" />
+
+                    {/* Bottom In-Image Badge */}
+                    <div className="absolute bottom-3 left-3 right-3 z-10 flex items-center justify-between rounded-xs bg-white/95 px-3.5 py-2 backdrop-blur-md border border-white/40 shadow-xs">
+                      <div>
+                        <span className="text-[10px] font-semibold uppercase tracking-[0.22em] text-[#004AAD]">
+                          Modern LifeStyle Decor
+                        </span>
+                        <p className="text-xs font-medium text-[#151717] mt-0.5">
+                          {cat.title}
+                        </p>
+                      </div>
+                      <span className="h-2 w-2 rounded-full bg-[#FFC30C]" />
+                    </div>
+
+                    {/* Accent Corner Bar */}
+                    <div className="absolute top-0 right-0 h-12 w-12 overflow-hidden pointer-events-none">
+                      <div className="absolute top-0 right-0 h-2 w-12 bg-[#004AAD]" />
+                      <div className="absolute top-0 right-0 w-2 h-12 bg-[#FFC30C]" />
+                    </div>
+                  </div>
+
                   {/* Category Description */}
                   <p className="mt-4 text-base sm:text-lg leading-relaxed text-[#525252] font-light">
                     {cat.description}
@@ -160,10 +191,10 @@ export function BusinessExpertiseSection() {
                   </div>
                 </motion.div>
 
-                {/* Photography Column */}
+                {/* Photography Column (Hidden on mobile < lg, shown on lg+) */}
                 <motion.div
                   variants={imageReveal}
-                  className={`lg:col-span-6 ${
+                  className={`hidden lg:block lg:col-span-6 ${
                     isReversed ? "lg:order-1" : "lg:order-2"
                   }`}
                 >

@@ -57,8 +57,8 @@ export function Header() {
               className={cn(
                 "relative transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)]",
                 isScrolled
-                  ? "h-9 w-40 sm:h-10 sm:w-48"
-                  : "h-9.5 w-44 sm:h-12 sm:w-56"
+                  ? "h-8.5 w-36 xs:h-9 xs:w-40 sm:h-10 sm:w-48 max-w-[calc(100vw-5rem)]"
+                  : "h-9 w-38 xs:h-9.5 xs:w-44 sm:h-12 sm:w-56 max-w-[calc(100vw-5rem)]"
               )}
             >
               <Image

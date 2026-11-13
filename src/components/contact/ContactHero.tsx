@@ -113,12 +113,13 @@ export function ContactHero() {
             {/* CTAs */}
             <motion.div
               variants={fadeUp}
-              className="mt-8 flex flex-wrap items-center gap-4"
+              className="mt-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 sm:gap-4"
             >
               <Button
                 variant="primary"
                 size="md"
                 onClick={scrollToEnquiry}
+                className="w-full sm:w-auto justify-center"
                 leftIcon={<MessageSquare className="h-4 w-4" />}
               >
                 Send Enquiry
@@ -128,10 +129,12 @@ export function ContactHero() {
                 href={`https://wa.me/${PRIMARY_WHATSAPP_NUMBER}`}
                 target="_blank"
                 rel="noopener noreferrer"
+                className="w-full sm:w-auto"
               >
                 <Button
                   variant="secondary"
                   size="md"
+                  className="w-full sm:w-auto justify-center hover:bg-[#EEF4FD]"
                   leftIcon={<PhoneCall className="h-4 w-4" />}
                 >
                   WhatsApp Us

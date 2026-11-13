@@ -131,6 +131,25 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
           <div className="grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-14 items-start">
             {/* Visual Image Showcase (Left Column) */}
             <div className="lg:col-span-6">
+              {/* Mobile Product Header: Title & Category (Order 1 on mobile, hidden on lg) */}
+              <div className="block lg:hidden mb-4">
+                <div className="flex flex-wrap items-center gap-2 mb-2">
+                  <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#004AAD]">
+                    {product.categoryLabel}
+                  </span>
+                  {product.badge && (
+                    <span className="rounded-full bg-[#004AAD]/5 px-2.5 py-0.5 text-[11px] font-medium uppercase tracking-wider text-[#004AAD] border border-[#004AAD]/15">
+                      {product.badge}
+                    </span>
+                  )}
+                </div>
+
+                <h1 className="font-heading text-2xl sm:text-3xl font-medium tracking-tight text-[#151717] leading-tight">
+                  {product.name}
+                </h1>
+              </div>
+
+              {/* Product Gallery Image (Order 2 on mobile, Left Column on desktop) */}
               <ProductImageGallery
                 productName={product.name}
                 categoryLabel={product.categoryLabel}
@@ -143,25 +162,27 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
 
             {/* Product Meta & Details (Right Column) */}
             <div className="flex flex-col lg:col-span-6">
-              {/* Category Tag & Badge */}
-              <div className="flex flex-wrap items-center gap-2 mb-3">
-                <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#004AAD]">
-                  {product.categoryLabel}
-                </span>
-                {product.badge && (
-                  <span className="rounded-full bg-[#004AAD]/5 px-2.5 py-0.5 text-[11px] font-medium uppercase tracking-wider text-[#004AAD] border border-[#004AAD]/15">
-                    {product.badge}
+              {/* Desktop Product Header (Hidden on mobile < lg, shown on lg+) */}
+              <div className="hidden lg:block mb-3">
+                <div className="flex flex-wrap items-center gap-2 mb-3">
+                  <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#004AAD]">
+                    {product.categoryLabel}
                   </span>
-                )}
+                  {product.badge && (
+                    <span className="rounded-full bg-[#004AAD]/5 px-2.5 py-0.5 text-[11px] font-medium uppercase tracking-wider text-[#004AAD] border border-[#004AAD]/15">
+                      {product.badge}
+                    </span>
+                  )}
+                </div>
+
+                {/* Product Heading */}
+                <h1 className="font-heading text-3xl lg:text-4xl font-medium tracking-tight text-[#151717] leading-tight">
+                  {product.name}
+                </h1>
               </div>
 
-              {/* Product Heading */}
-              <h1 className="font-heading text-2xl sm:text-3xl lg:text-4xl font-medium tracking-tight text-[#151717] leading-tight">
-                {product.name}
-              </h1>
-
-              {/* Full Description */}
-              <p className="mt-4 text-sm sm:text-base font-light leading-relaxed text-[#525252]">
+              {/* Full Description (Order 3 on mobile, below image) */}
+              <p className="mt-1 lg:mt-4 text-sm sm:text-base font-light leading-relaxed text-[#525252]">
                 {product.description}
               </p>
 

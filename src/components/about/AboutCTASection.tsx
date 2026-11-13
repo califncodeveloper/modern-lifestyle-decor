@@ -56,7 +56,7 @@ export function AboutCTASection() {
           {/* Heading */}
           <motion.h2
             variants={fadeUp}
-            className="font-heading text-3xl sm:text-5xl lg:text-6xl font-medium tracking-tight text-white leading-tight"
+            className="font-heading text-2xl sm:text-5xl lg:text-6xl font-medium tracking-tight text-white leading-tight break-words"
           >
             {aboutCtaContent.heading}
           </motion.h2>
