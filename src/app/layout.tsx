@@ -23,10 +23,14 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   icons: {
     icon: [
-      { url: "/images/brand/favicon.png", type: "image/png" },
+      { url: "/icon.svg", type: "image/svg+xml" },
+      { url: "/images/brand/favicon.png", sizes: "64x64", type: "image/png" },
       { url: "/favicon.ico", sizes: "any" },
     ],
-    apple: "/images/brand/logo-icon.png",
+    shortcut: "/favicon.ico",
+    apple: [
+      { url: "/images/brand/logo-icon.png", sizes: "512x512", type: "image/png" },
+    ],
   },
   openGraph: {
     title: `${siteConfig.name} — ${siteConfig.tagline}`,

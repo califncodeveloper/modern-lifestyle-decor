@@ -49,7 +49,7 @@ export function BackToTop({ threshold = 350, className }: BackToTopProps) {
           aria-label="Back to top of page"
           title="Back to top"
           className={cn(
-            "fixed bottom-[calc(5.75rem+env(safe-area-inset-bottom,0px))] right-4 sm:bottom-28 sm:right-7 z-30 flex h-11 w-11 items-center justify-center rounded-full bg-[#151717] text-white shadow-lg border border-neutral-700/80 hover:border-[#FFC30C] hover:text-[#FFC30C] hover:bg-[#262626] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#FFC30C] focus-visible:ring-offset-2 transition-colors duration-200 cursor-pointer motion-reduce:transform-none",
+            "fixed bottom-[calc(1.25rem+env(safe-area-inset-bottom,0px))] left-4 sm:bottom-6 sm:left-6 z-30 flex h-11 w-11 items-center justify-center rounded-full bg-[#151717] text-white shadow-lg border border-neutral-700/80 hover:border-[#FFC30C] hover:text-[#FFC30C] hover:bg-[#262626] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#FFC30C] focus-visible:ring-offset-2 transition-colors duration-200 cursor-pointer motion-reduce:transform-none",
             className
           )}
         >

@@ -4,6 +4,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { MessageSquare, ExternalLink, RotateCcw, ShieldCheck } from "lucide-react";
 import type { UIChatMessage } from "@/types/chat";
+import { FormattedChatContent } from "./FormattedChatContent";
 import { cn } from "@/utils/cn";
 import { EASINGS } from "@/config/motion";
 
@@ -57,8 +58,8 @@ export function ChatMessage({ message, onRetry }: ChatMessageProps) {
             )}
           >
             {/* Formatted Text Content */}
-            <div className="whitespace-pre-line space-y-1">
-              {message.content}
+            <div className="space-y-1">
+              <FormattedChatContent content={message.content} isUser={isUser} />
             </div>
 
             {/* Error Message and Retry Action */}

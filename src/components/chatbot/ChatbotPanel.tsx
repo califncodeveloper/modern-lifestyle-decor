@@ -69,8 +69,8 @@ export function ChatbotPanel({
           className={cn(
             "fixed z-50 flex flex-col overflow-hidden bg-white shadow-2xl border border-[#E5E9F2] rounded-2xl",
             isMinimized
-              ? "inset-x-3 bottom-[calc(5rem+env(safe-area-inset-bottom,0px))] sm:inset-auto sm:right-7 sm:bottom-24 sm:w-[380px] h-auto top-auto"
-              : "inset-x-3 bottom-[calc(5rem+env(safe-area-inset-bottom,0px))] top-16 sm:inset-auto sm:right-7 sm:bottom-24 sm:w-[420px] sm:h-[600px] sm:max-h-[82dvh]"
+              ? "inset-x-3 bottom-[calc(9.25rem+env(safe-area-inset-bottom,0px))] sm:inset-auto sm:right-6 sm:bottom-[10rem] sm:w-[380px] h-auto top-auto"
+              : "inset-x-3 bottom-[calc(9.25rem+env(safe-area-inset-bottom,0px))] top-14 sm:inset-auto sm:right-6 sm:bottom-[10rem] sm:w-[420px] sm:h-[600px] sm:max-h-[75dvh]"
           )}
           role="dialog"
           aria-modal="true"

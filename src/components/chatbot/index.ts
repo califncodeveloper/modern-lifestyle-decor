@@ -6,4 +6,5 @@ export { ChatInput } from "./ChatInput";
 export { QuickQuestions } from "./QuickQuestions";
 export { TypingIndicator } from "./TypingIndicator";
 export { ChatbotWelcome } from "./ChatbotWelcome";
+export { FormattedChatContent } from "./FormattedChatContent";
 export { useChatbot, SUGGESTED_QUICK_QUESTIONS, INITIAL_GREETING } from "@/hooks/useChatbot";
