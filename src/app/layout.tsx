@@ -23,11 +23,11 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   icons: {
     icon: [
-      { url: "/icon.svg", type: "image/svg+xml" },
+      { url: "/images/brand/logo-icon.png", sizes: "512x512", type: "image/png" },
       { url: "/images/brand/favicon.png", sizes: "64x64", type: "image/png" },
-      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon.svg", type: "image/svg+xml" },
     ],
-    shortcut: "/favicon.ico",
+    shortcut: "/images/brand/logo-icon.png",
     apple: [
       { url: "/images/brand/logo-icon.png", sizes: "512x512", type: "image/png" },
     ],
@@ -61,6 +61,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="h-full antialiased scroll-smooth">
+      <head>
+        <link rel="icon" href="/images/brand/favicon.png?v=2" type="image/png" sizes="64x64" />
+        <link rel="icon" href="/images/brand/logo-icon.png?v=2" type="image/png" sizes="512x512" />
+        <link rel="shortcut icon" href="/images/brand/favicon.png?v=2" type="image/png" />
+        <link rel="apple-touch-icon" href="/images/brand/logo-icon.png?v=2" />
+      </head>
       <body className="min-h-full flex flex-col font-sans bg-white text-[#151717] antialiased selection:bg-[#EEF4FD] selection:text-[#004AAD]">
         {/* Skip to Main Content Link for accessibility */}
         <a
