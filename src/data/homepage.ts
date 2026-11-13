@@ -5,46 +5,6 @@ import type {
   ProjectSlot,
 } from "@/types/decor";
 
-export interface HeroPillar {
-  id: string;
-  tabLabel: string;
-  categoryTag: string;
-  title: string;
-  subtitle: string;
-  image: string;
-  href: string;
-}
-
-export const heroPillars: HeroPillar[] = [
-  {
-    id: "curtains",
-    tabLabel: "Custom Curtains",
-    categoryTag: "Tailored Drapery & Sheers",
-    title: "Window Ensemble Collection",
-    subtitle: "Floor-to-ceiling blackout, linen & jacquard drapes",
-    image: "/images/products/curtains/customised-curtains-window-ensemble-main.png",
-    href: "/services/customised-curtains",
-  },
-  {
-    id: "mosquito-nets",
-    tabLabel: "Mosquito Nets",
-    categoryTag: "SS 304 Insect Protection",
-    title: "Grand Entrance & Window Screens",
-    subtitle: "Heavy-duty stainless steel wire mesh & powder-coated frames",
-    image: "/images/products/mosquito-nets/ss-open-main-door-grand-main.png",
-    href: "/services/mosquito-nets",
-  },
-  {
-    id: "blinds",
-    tabLabel: "Designer Blinds",
-    categoryTag: "Architectural Light Control",
-    title: "Precision Casement & Roller Blinds",
-    subtitle: "Roller, zebra, wooden & PVC daylight filtering",
-    image: "/images/categories/category-blinds.png",
-    href: "/services/blinds",
-  },
-];
-
 export const heroContent = {
   eyebrow: "MODERN LIFESTYLE DECOR",
   heading: "Transform Your Windows. Elevate Your Lifestyle.",
@@ -60,8 +20,7 @@ export const heroContent = {
   },
   brandStatement: "Manufacturer | Wholesale | Retail",
   images: {
-    primary: "/images/products/curtains/customised-curtains-window-ensemble-main.png",
-    secondary: "/images/products/mosquito-nets/ss-open-window-3panel-detail.png",
+    primary: "/images/hero/hero-luxury-interior.jpg",
   },
 };
 

@@ -1,22 +1,18 @@
 "use client";
 
-import { useRef, useState, useEffect } from "react";
+import { useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { motion, AnimatePresence, useScroll, useTransform, useReducedMotion } from "framer-motion";
+import { motion, useScroll, useTransform, useReducedMotion } from "framer-motion";
 import { ArrowRight, ShieldCheck, Sparkles, CheckCircle2 } from "lucide-react";
 import { Container } from "@/components/layout/Container";
 import { Button } from "@/components/common/Button";
-import { heroContent, heroPillars } from "@/data/homepage";
+import { heroContent } from "@/data/homepage";
 import { fadeUp, staggerContainer, imageReveal } from "@/lib/motion";
-import { cn } from "@/utils/cn";
 
 export function HeroSection() {
   const containerRef = useRef<HTMLElement>(null);
   const shouldReduceMotion = useReducedMotion();
-  const [activePillarIndex, setActivePillarIndex] = useState(0);
-
-  const activePillar = heroPillars[activePillarIndex] || heroPillars[0];
 
   const { scrollYProgress } = useScroll({
     target: containerRef,
@@ -29,15 +25,6 @@ export function HeroSection() {
     [0, 1],
     shouldReduceMotion ? ["0%", "0%"] : ["0%", "8%"]
   );
-
-  // Auto-cycle through the 3 signature pillars every 6 seconds if user is idle
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setActivePillarIndex((prev) => (prev + 1) % heroPillars.length);
-    }, 6000);
-
-    return () => clearInterval(timer);
-  }, []);
 
   return (
     <section
@@ -179,61 +166,35 @@ export function HeroSection() {
             </motion.div>
           </motion.div>
 
-          {/* Right Column: Architectural Photography Composition */}
+          {/* Right Column: Clean Single Luxury Visual (Zero Cutoffs, Zero Overlaps) */}
           <motion.div
             variants={imageReveal}
             initial="hidden"
             animate="visible"
             className="relative lg:col-span-5"
           >
-            {/* Interactive Category Tabs Header */}
-            <div className="mb-3.5 flex items-center justify-center sm:justify-start gap-1.5 overflow-x-auto pb-1 no-scrollbar">
-              {heroPillars.map((pillar, idx) => (
-                <button
-                  key={pillar.id}
-                  type="button"
-                  onClick={() => setActivePillarIndex(idx)}
-                  className={cn(
-                    "px-3 py-1.5 rounded-full text-xs font-semibold tracking-wide transition-all duration-200 cursor-pointer border whitespace-nowrap",
-                    activePillarIndex === idx
-                      ? "bg-[#004AAD] text-white border-[#004AAD] shadow-sm shadow-[#004AAD]/25 scale-102"
-                      : "bg-white/95 hover:bg-white text-neutral-600 border-neutral-200/90 hover:border-[#004AAD]/40 hover:text-[#004AAD]"
-                  )}
-                >
-                  {pillar.tabLabel}
-                </button>
-              ))}
-            </div>
-
-            {/* Main Showcase Card Frame */}
+            {/* Main Architectural Image Frame */}
             <div className="relative mx-auto aspect-[4/5] w-full max-w-[480px] overflow-hidden rounded-2xl border border-neutral-200/90 bg-neutral-100 shadow-2xl lg:max-w-none">
-              <AnimatePresence mode="wait">
-                <motion.div
-                  key={activePillar.id}
-                  initial={{ opacity: 0, scale: 1.02 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  exit={{ opacity: 0, scale: 0.98 }}
-                  transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
-                  style={{ y: imageY }}
-                  className="absolute -top-[5%] inset-x-0 h-[110%] w-full"
-                >
-                  <Image
-                    src={activePillar.image}
-                    alt={`${activePillar.title} - Modern LifeStyle Decor`}
-                    fill
-                    priority
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 40vw"
-                    className="object-cover object-center"
-                  />
-                </motion.div>
-              </AnimatePresence>
+              <motion.div
+                style={{ y: imageY }}
+                className="absolute -top-[5%] inset-x-0 h-[110%] w-full"
+              >
+                <Image
+                  src={heroContent.images.primary}
+                  alt="Modern LifeStyle Decor luxury architectural curtains, blinds and window interior"
+                  fill
+                  priority
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 40vw"
+                  className="object-cover object-center"
+                />
+              </motion.div>
 
-              {/* Gradient Scrim for crystal clear text readability */}
+              {/* Gentle gradient scrim for seamless badge readability */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent pointer-events-none" />
 
-              {/* Bottom In-Image Glassmorphic Badge (Unobstructed, full width) */}
+              {/* Bottom In-Image Glassmorphic Badge (Clean, full width, 100% visible) */}
               <Link
-                href={activePillar.href}
+                href="/services"
                 className="group absolute bottom-4 left-4 right-4 z-10 block rounded-xl bg-white/95 p-3.5 sm:p-4 backdrop-blur-md border border-white/60 shadow-lg hover:bg-white transition-all duration-200"
               >
                 <div className="flex items-center justify-between gap-3">
@@ -241,14 +202,14 @@ export function HeroSection() {
                     <div className="flex items-center gap-1.5 mb-0.5">
                       <span className="h-2 w-2 rounded-full bg-[#FFC30C] animate-pulse" />
                       <p className="text-[10px] sm:text-[11px] font-bold uppercase tracking-[0.2em] text-[#004AAD] truncate">
-                        {activePillar.categoryTag}
+                        Signature Collection
                       </p>
                     </div>
                     <p className="text-xs sm:text-sm text-[#151717] font-bold truncate">
-                      {activePillar.title}
+                      Mosquito Nets • Designer Blinds • Curtains
                     </p>
                     <p className="text-[11px] text-neutral-600 line-clamp-1 mt-0.5 font-normal">
-                      {activePillar.subtitle}
+                      Custom-Crafted Fabrication • Precision On-Site Fitment
                     </p>
                   </div>
 
@@ -259,28 +220,8 @@ export function HeroSection() {
               </Link>
             </div>
 
-            {/* Secondary Floating Detail Card (Positioned Top-Left with Zero Collision) */}
-            <div className="hidden sm:block absolute top-14 -left-4 lg:-left-7 w-36 lg:w-40 aspect-square overflow-hidden rounded-2xl border-2 border-white bg-white shadow-xl z-20">
-              <Image
-                src={heroContent.images.secondary}
-                alt="SS 304 Precision Mesh window hardware detail"
-                fill
-                sizes="160px"
-                className="object-cover transition-transform duration-500 hover:scale-108 motion-reduce:transform-none"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent pointer-events-none" />
-              <div className="absolute bottom-2 left-2 right-2">
-                <span className="text-[9px] uppercase tracking-wider font-bold text-white block">
-                  Precision Hardware
-                </span>
-                <span className="text-[8px] text-[#FFC30C] font-medium block">
-                  SS 304 Mesh
-                </span>
-              </div>
-            </div>
-
-            {/* Official Brand Authority Badge (Positioned Top-Right) */}
-            <div className="hidden sm:flex absolute -top-3 -right-3 lg:-right-6 items-center gap-2.5 rounded-2xl bg-white/95 backdrop-blur-md px-3.5 py-2 shadow-xl border border-white/70 z-20">
+            {/* Official Brand Authority Badge (Top-Right, cleanly outside frame) */}
+            <div className="hidden sm:flex absolute -top-3 -right-3 lg:-right-5 items-center gap-2.5 rounded-2xl bg-white/95 backdrop-blur-md px-3.5 py-2 shadow-xl border border-white/70 z-20">
               <div className="h-7 w-7 rounded-xl bg-[#004AAD] p-1 flex items-center justify-center shadow-xs">
                 <Image
                   src="/icon.svg"
